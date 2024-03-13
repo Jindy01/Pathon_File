@@ -118,7 +118,7 @@ empty_matrix = []
 
 # dfs(graph, 7)
 
-
+# Доделать своим способом
 def generateMatrix(n: int):
         matrix = [[0 for _ in range(n)] for _ in range(n)]
 
@@ -137,9 +137,68 @@ def generateMatrix(n: int):
                 elif len(matrix) == i:
                      continue
         
-         
         print(len(matrix))
         print(len(matrix[0]))
         print(matrix)
 
 generateMatrix(3)
+
+# Данный пример с GPT
+# def spiral_matrix(n):
+#     matrix = [[0] * n for _ in range(n)]
+#     top, bottom, left, right = 0, n - 1, 0, n - 1
+#     num = 1
+
+#     while num <= n * n:
+#         # Вправо
+#         for i in range(left, right + 1):
+#             matrix[top][i] = num
+#             num += 1
+#         top += 1
+
+#         # Вниз
+#         for i in range(top, bottom + 1):
+#             matrix[i][right] = num
+#             num += 1
+#         right -= 1
+
+#         # Влево
+#         for i in range(right, left - 1, -1):
+#             matrix[bottom][i] = num
+#             num += 1
+#         bottom -= 1
+
+#         # Вверх
+#         for i in range(bottom, top - 1, -1):
+#             matrix[i][left] = num
+#             num += 1
+#         left += 1
+
+#     return matrix
+
+# # Пример использования
+# n = 5
+# result = spiral_matrix(n)
+# for row in result:
+#     print(row)
+
+
+def speral_matrix(n):
+    matrix = [[0] * n for _ in range(n)]
+    top, bottom, left, right = 0, n - 1, 0, n - 1
+    num = 1 
+
+    while num <= n * n:
+        for i in range(left, right + 1):
+             
+
+print("Учи алгосы")
+
+
+
+
+
+
+
+
+
