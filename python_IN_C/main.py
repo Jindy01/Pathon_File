@@ -296,5 +296,35 @@ def combinationSum(candidates: int, target: int):
 # permute(nums)
 
 
+# def count_vowels(any_srt: str) -> int:
+#     vowels = ["A", "E", "I", "O", "U", "Y"] 
+#     vowels_count = 0
+    
+#     for i in any_srt.upper():
+#         if i in vowels:
+#             vowels_count += 1
+    
+#     print(vowels_count)
 
 
+# count_vowels('Hello! My neighbor')
+
+
+# def sum_of_digits(integer: int) -> int:
+
+#     if integer == 0:
+#         return 0
+#     elif isinstance(integer, float):
+#         return print('Function working with round number')
+#     elif integer < 0:
+#         print('This value negitive meaning')
+#         return  
+#     else:
+#         count = 0
+#         for i in str(integer):
+#             count += int(i)
+        
+#         return count
+
+    
+# print(sum_of_digits(-123))
