@@ -328,3 +328,36 @@ def combinationSum(candidates: int, target: int):
 
     
 # print(sum_of_digits(-123))
+    
+
+# list_arr = [1,2,3,4]
+
+# def plusOne(digits: list):
+#     all_numbers = int(''.join(str(item) for item in digits))
+#     all_numbers += 1 
+#     all_numbers = str(all_numbers)
+#     result = []
+#     for i in all_numbers:
+#         i = int(i)
+#         result.append(i)
+    
+#     return result
+
+# print(plusOne(digits=list_arr))
+
+ls_1 = [1,2,3,0,0,0]
+ls_2 = [2,5,6]
+
+def merge(list_1, list_2):
+    
+
+    result_list = list_1 + list_2
+    sorted(result_list)
+    print(result_list)
+    for i, o in enumerate(result_list):
+        print(f'{i} индекс {o} обьект')
+        
+
+merge(list_1=ls_1, list_2=ls_2)
+
+Пропуск 
