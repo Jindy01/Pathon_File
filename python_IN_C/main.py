@@ -349,15 +349,16 @@ ls_1 = [1,2,3,0,0,0]
 ls_2 = [2,5,6]
 
 def merge(list_1, list_2):
-    
 
-    result_list = list_1 + list_2
-    sorted(result_list)
-    print(result_list)
-    for i, o in enumerate(result_list):
-        print(f'{i} индекс {o} обьект')
+    for i in list_1:
+        if i in list_1:
+            list_1.remove(i)
+    
+    print(list_1)
+
+    result = list_1 + list_2
+    
         
 
 merge(list_1=ls_1, list_2=ls_2)
 
-Пропуск 
