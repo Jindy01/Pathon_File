@@ -348,17 +348,28 @@ def combinationSum(candidates: int, target: int):
 ls_1 = [1,2,3,0,0,0]
 ls_2 = [2,5,6]
 
-def merge(list_1, list_2):
+# def merge(list_1, list_2):
+#
+#     for i, el in enumerate(list_1):
+#         print(f"i{i}= element {el}")
+#         if el == el in list_1:
+#             list_1.remove(el)
+#
+#     print(list_1)
+#
+#     result = list_1 + list_2
+#
+#
+#
+# merge(list_1=ls_1, list_2=ls_2)
 
-    for i in list_1:
-        if i in list_1:
-            list_1.remove(i)
-    
-    print(list_1)
 
-    result = list_1 + list_2
-    
-        
+ls1 = [1,2,3,4,5,6,7,8,9,10]
+def sorts_int(ls: list) -> list:
+    result = ls.sort()
+    return result
 
-merge(list_1=ls_1, list_2=ls_2)
+print(sorts_int(ls1))
+
+print('Return Def')
 
