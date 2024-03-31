@@ -372,4 +372,5 @@ def sorts_int(ls: list) -> list:
 print(sorts_int(ls1))
 
 print('Return Def')
+print('I have new project')
 
