@@ -1,4 +1,5 @@
 import random
+import re
 
 # def isPalindrome(x: int) -> bool:
 #     first_list = []
@@ -345,8 +346,8 @@ def combinationSum(candidates: int, target: int):
 
 # print(plusOne(digits=list_arr))
 
-ls_1 = [1,2,3,0,0,0]
-ls_2 = [2,5,6]
+# ls_1 = [1,2,3,0,0,0]
+# ls_2 = [2,5,6]
 
 # def merge(list_1, list_2):
 #
@@ -364,13 +365,38 @@ ls_2 = [2,5,6]
 # merge(list_1=ls_1, list_2=ls_2)
 
 
-ls1 = [1,2,3,4,5,6,7,8,9,10]
-def sorts_int(ls: list) -> list:
-    result = ls.sort()
-    return result
+# ls1 = [10,9,4,1,5,7,2,3,9,1]
+# def sorts_int(ls: list) -> list:
+#
+#     return ls.sort()
+#
+# print(sorts_int(ls1))
+# print((ls1))
 
-print(sorts_int(ls1))
+int_for_def = -312
 
-print('Return Def')
-print('I have new project')
+def reverse(x: int) -> int:
+    minus = '-'
+    x = str(x)
+    result_one = re.findall(r'\d+', x)
+    reverse_srt = ''.join(reversed(result_one))
+    
+    my_string = ''.join(result_one)
 
+    
+    print(result_one)
+    print(my_string)
+    print(reverse_srt)
+    reversed_int = ''.join(reversed(x))
+    if '-' in reversed_int:
+        position = reversed_int.find('-')
+        print(position)
+        result = minus + reversed_int
+        print(result)
+
+    print(reversed_int)
+
+reverse(int_for_def)
+
+# str_int = str(int_for_def)
+# print(sorted(str_int))
