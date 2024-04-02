@@ -376,27 +376,29 @@ def combinationSum(candidates: int, target: int):
 int_for_def = -312
 
 def reverse(x: int) -> int:
-    minus = '-'
-    x = str(x)
-    result_one = re.findall(r'\d+', x)
-    reverse_srt = ''.join(reversed(result_one))
-    
-    my_string = ''.join(result_one)
-
-    
-    print(result_one)
-    print(my_string)
-    print(reverse_srt)
-    reversed_int = ''.join(reversed(x))
+    reversed_int = ''.join(reversed(str(x)))
     if '-' in reversed_int:
-        position = reversed_int.find('-')
-        print(position)
-        result = minus + reversed_int
-        print(result)
+        remove_el = reversed_int.replace('-', '')
+        result = '-' + remove_el
+        return int(result)
 
-    print(reversed_int)
+    return int(reversed_int)
 
-reverse(int_for_def)
+print(reverse(int_for_def))
 
 # str_int = str(int_for_def)
 # print(sorted(str_int))
+
+
+class Solution:
+    def reverse(self, x: int) -> int:
+        result = ''.join(reversed(str(x)))
+        if '-' in result:
+            remove_el = result.replace('-', '')
+            result = '-' + remove_el
+            result = int(result)
+
+        result = int(result)
+        if result > 2 ** 31 - 1 or result < -2 ** 31:
+            return 0
+        return int(result)
