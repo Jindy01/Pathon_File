@@ -373,32 +373,64 @@ def combinationSum(candidates: int, target: int):
 # print(sorts_int(ls1))
 # print((ls1))
 
-int_for_def = -312
-
-def reverse(x: int) -> int:
-    reversed_int = ''.join(reversed(str(x)))
-    if '-' in reversed_int:
-        remove_el = reversed_int.replace('-', '')
-        result = '-' + remove_el
-        return int(result)
-
-    return int(reversed_int)
-
-print(reverse(int_for_def))
+# int_for_def = -312
+#
+# def reverse(x: int) -> int:
+#     reversed_int = ''.join(reversed(str(x)))
+#     if '-' in reversed_int:
+#         remove_el = reversed_int.replace('-', '')
+#         result = '-' + remove_el
+#         return int(result)
+#
+#     return int(reversed_int)
+#
+# print(reverse(int_for_def))
 
 # str_int = str(int_for_def)
 # print(sorted(str_int))
 
 
-class Solution:
-    def reverse(self, x: int) -> int:
-        result = ''.join(reversed(str(x)))
-        if '-' in result:
-            remove_el = result.replace('-', '')
-            result = '-' + remove_el
-            result = int(result)
+# class Solution:
+#     def reverse(self, x: int) -> int:
+#         result = ''.join(reversed(str(x)))
+#         if '-' in result:
+#             remove_el = result.replace('-', '')
+#             result = '-' + remove_el
+#             result = int(result)
+#
+#         result = int(result)
+#         if result > 2 ** 31 - 1 or result < -2 ** 31:
+#             return 0
+#         return int(result)
+#
+digits_for_def = 2
+def letterCombinations(digits:int):
+    if not digits:
+        return []
+    string_digits = str(digits)
+    result = []
+    print(type(string_digits))
+    dictionary_of_letters = {
+        "2": "abc",
+        "3": "def",
+        "4": "ghi",
+        "5": "jkl",
+        "6": "mno",
+        "7": "pqrs",
+        "8": "tuv",
+        "9": "wxyz"
+    }
 
-        result = int(result)
-        if result > 2 ** 31 - 1 or result < -2 ** 31:
-            return 0
-        return int(result)t
+    for key, val in dictionary_of_letters.items():
+        if len(string_digits) == 1:
+            for el in val:
+                result.append(el)
+                print(result)
+        elif string_digits == key:
+            return val
+
+
+
+print(letterCombinations(digits_for_def))
+
+
