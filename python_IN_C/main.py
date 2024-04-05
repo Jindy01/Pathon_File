@@ -427,7 +427,7 @@ def letterCombinations(digits:int):
                 result.append(el)
                 print(result)
         elif string_digits == key:
-            return val
+            return key
 
 
 
