@@ -403,13 +403,14 @@ def combinationSum(candidates: int, target: int):
 #             return 0
 #         return int(result)
 #
-digits_for_def = 2
-def letterCombinations(digits:int):
+digits_for_def = '23'
+def letterCombinations(digits: str):
     if not digits:
         return []
-    string_digits = str(digits)
+    # string_digits = str(digits)
     result = []
-    print(type(string_digits))
+    combinations = [""]
+    # new_combinations = []
     dictionary_of_letters = {
         "2": "abc",
         "3": "def",
@@ -421,15 +422,23 @@ def letterCombinations(digits:int):
         "9": "wxyz"
     }
 
-    for key, val in dictionary_of_letters.items():
-        if len(string_digits) == 1:
-            for el in val:
-                result.append(el)
-                print(result)
-        elif string_digits == key:
-            return key
+    # for key, val in dictionary_of_letters.items():
+    #     if string_digits in dictionary_of_letters:
+    #         for el in val:
+    #             result.append(el)
+    #             return result
+    #
+    #     elif string_digits == key:
+    #         return key
 
+    for digit in digits:
+        new_combinations = []
+        for combination in combinations:
+            for letter in dictionary_of_letters[digit]:
+                new_combinations.append(combination + letter)
+        combinations = new_combinations
 
+    return combinations
 
 print(letterCombinations(digits_for_def))
 
