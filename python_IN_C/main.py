@@ -1,5 +1,8 @@
+from ast import List
+from typing import List
 import random
 import re
+
 
 # def isPalindrome(x: int) -> bool:
 #     first_list = []
@@ -403,43 +406,73 @@ def combinationSum(candidates: int, target: int):
 #             return 0
 #         return int(result)
 #
-digits_for_def = '23'
-def letterCombinations(digits: str):
-    if not digits:
-        return []
-    # string_digits = str(digits)
-    result = []
-    combinations = [""]
-    # new_combinations = []
-    dictionary_of_letters = {
-        "2": "abc",
-        "3": "def",
-        "4": "ghi",
-        "5": "jkl",
-        "6": "mno",
-        "7": "pqrs",
-        "8": "tuv",
-        "9": "wxyz"
-    }
+    
+# digits_for_def = '23'
+# def letterCombinations(digits: str):
+#     if not digits:
+#         return []
+#     # string_digits = str(digits)
+#     result = []
+#     combinations = [""]
+#     # new_combinations = []
+#     dictionary_of_letters = {
+#         "2": "abc",
+#         "3": "def",
+#         "4": "ghi",
+#         "5": "jkl",
+#         "6": "mno",
+#         "7": "pqrs",
+#         "8": "tuv",
+#         "9": "wxyz"
+#     }
 
-    # for key, val in dictionary_of_letters.items():
-    #     if string_digits in dictionary_of_letters:
-    #         for el in val:
-    #             result.append(el)
-    #             return result
-    #
-    #     elif string_digits == key:
-    #         return key
+#     # for key, val in dictionary_of_letters.items():
+#     #     if string_digits in dictionary_of_letters:
+#     #         for el in val:
+#     #             result.append(el)
+#     #             return result
+#     #
+#     #     elif string_digits == key:
+#     #         return key
 
-    for digit in digits:
-        new_combinations = []
-        for combination in combinations:
-            for letter in dictionary_of_letters[digit]:
-                new_combinations.append(combination + letter)
-        combinations = new_combinations
+#     for digit in digits:
+#         new_combinations = []
+#         for combination in combinations:
+#             for letter in dictionary_of_letters[digit]:
+#                     new_combinations.append(combination + letter)
+#         combinations = new_combinations
 
-    return combinations
+#     return combinations
 
-print(letterCombinations(digits_for_def))
+# print(letterCombinations(digits_for_def))
 
 
+# nums = [3,2,2,3]
+# val = 3
+
+# def removeElement(nums, val) -> int:
+#     while val in nums:
+#         nums.remove(val)
+
+#     return len(nums)
+        
+
+
+# print(removeElement(nums,val))
+
+nums1 = [1,2,3,0,0,0] 
+m = 3
+nums2 = [2,5,6] 
+n = 3
+
+def merge(nums1: List[int],nums2: List[int]) -> None:
+    result = nums1 + nums2
+    while 0 in result:
+        if 0 in result:
+            result.remove(0)
+
+    result.sort()
+    print(result)
+
+
+merge(nums1=nums1, nums2=nums2)

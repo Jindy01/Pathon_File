@@ -7,21 +7,21 @@ from collections import deque
 # incl = np.where(matrix == targ_ell)
 
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-matrix_5x5 = [
-    [1,  2,  3,  4,  5],
-    [6,  7,  8,  9,  10],
-    [11, 12, 13, 14, 15],
-    [16, 17, 18, 19, 20],
-    [21, 22, 23, 24, 25]
-]
+# matrix_5x5 = [
+#     [1,  2,  3,  4,  5],
+#     [6,  7,  8,  9,  10],
+#     [11, 12, 13, 14, 15],
+#     [16, 17, 18, 19, 20],
+#     [21, 22, 23, 24, 25]
+# ]
 
-empty_matrix = []
+# empty_matrix = []
 
 # def find_max_ell(matrixf) -> int:
 #     if len(matrixf) == 0:
@@ -119,29 +119,29 @@ empty_matrix = []
 # dfs(graph, 7)
 
 # Доделать своим способом
-def generateMatrix(n: int):
-        matrix = [[0 for _ in range(n)] for _ in range(n)]
+# def generateMatrix(n: int):
+#         matrix = [[0 for _ in range(n)] for _ in range(n)]
 
-        coordinate_x = 0
-        coordinate_y = 0
+#         coordinate_x = 0
+#         coordinate_y = 0
 
-        int_for_matrix = 1
-        for i, row in enumerate(matrix):
-            for j, element in enumerate(row):
+#         int_for_matrix = 1
+#         for i, row in enumerate(matrix):
+#             for j, element in enumerate(row):
                 
-                if element == 0:
-                    matrix[coordinate_x][coordinate_y] = int_for_matrix
-                    int_for_matrix += 1
-                if len(matrix) > i:
-                       coordinate_x += 1
-                elif len(matrix) == i:
-                     continue
+#                 if element == 0:
+#                     matrix[coordinate_x][coordinate_y] = int_for_matrix
+#                     int_for_matrix += 1
+#                 if len(matrix) > i:
+#                        coordinate_x += 1
+#                 elif len(matrix) == i:
+#                      continue
         
-        print(len(matrix))
-        print(len(matrix[0]))
-        print(matrix)
+#         print(len(matrix))
+#         print(len(matrix[0]))
+#         print(matrix)
 
-generateMatrix(3)
+# generateMatrix(3)
 
 # Данный пример с GPT
 # def spiral_matrix(n):
@@ -183,17 +183,22 @@ generateMatrix(3)
 #     print(row)
 
 
-def speral_matrix(n):
-    matrix = [[0] * n for _ in range(n)]
-    top, bottom, left, right = 0, n - 1, 0, n - 1
-    num = 1 
+# def speral_matrix(n):
+#     matrix = [[0] * n for _ in range(n)]
+#     top, bottom, left, right = 0, n - 1, 0, n - 1
+#     num = 1 
 
-    while num <= n * n:
-        for i in range(left, right + 1):
-             
+#     while num <= n * n:
+#         for i in range(left, right + 1):
 
-print("Учи алгосы")
 
+# def factorial(n):
+#     result = 1
+#     for i in range(1, n +1):
+#         result *= i
+#     return result
+    
+# print(factorial(5))
 
 
 
