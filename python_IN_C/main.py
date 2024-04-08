@@ -460,19 +460,21 @@ def combinationSum(candidates: int, target: int):
 
 # print(removeElement(nums,val))
 
-nums1 = [1,2,3,0,0,0] 
-m = 3
-nums2 = [2,5,6] 
-n = 3
+# nums1 = [1,2,3,0,0,0]
+# m = 3
+# nums2 = [2,5,6]
+# n = 3
+#
+# def merge(nums1: List[int],nums2: List[int]) -> None:
+#     result = nums1 + nums2
+#     while 0 in result:
+#         if 0 in result:
+#             result.remove(0)
+#
+#     result.sort()
+#     print(result)
+#
+#
+# merge(nums1=nums1, nums2=nums2)
 
-def merge(nums1: List[int],nums2: List[int]) -> None:
-    result = nums1 + nums2
-    while 0 in result:
-        if 0 in result:
-            result.remove(0)
-
-    result.sort()
-    print(result)
-
-
-merge(nums1=nums1, nums2=nums2)
+mew _ wep
