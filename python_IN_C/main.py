@@ -466,13 +466,15 @@ def combinationSum(candidates: int, target: int):
 # n = 3
 #
 # def merge(nums1: List[int],nums2: List[int]) -> None:
-#     result = nums1 + nums2
-#     while 0 in result:
-#         if 0 in result:
-#             result.remove(0)
+#     nums1 = nums1 +nums2
+#     while 0 in nums1:
+#         nums1.remove(0)
 #
-#     result.sort()
-#     print(result)
+#     return nums1.sort()
 #
 #
-# merge(nums1=nums1, nums2=nums2)
+#
+#
+# print(merge(nums1=nums1, nums2=nums2))
+
+
