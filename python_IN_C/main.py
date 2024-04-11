@@ -2,6 +2,8 @@ from ast import List
 from typing import List
 import random
 import re
+import numpy as np
+
 
 
 # def isPalindrome(x: int) -> bool:
@@ -247,10 +249,10 @@ import re
 #  Выходные данные: [[2,2,2,2],[2,3,3],[3,5]]
 
 
-def combinationSum(candidates: int, target: int):
-    all_combinations = []
-    for el in range(len(candidates)):
-        return
+# def combinationSum(candidates: int, target: int):
+#     all_combinations = []
+#     for el in range(len(candidates)):
+#         return
     
 
 # Ввод: числа = [2,0,2,1,1,0]
@@ -460,21 +462,46 @@ def combinationSum(candidates: int, target: int):
 
 # print(removeElement(nums,val))
 
+nums1 = [1,2,3,0,0,0]
+m = 3
+nums2 = [2,5,6]
+n = 3
+
+# def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+#     if n == 0: return
+#     nums1 = np.hstack([nums1, nums2])
+
+#     nums1 = nums1[nums1 != 0]
+#     nums1 = np.sort(nums1)
+
+#     return nums1
+
+# print(merge(nums1=nums1, m=m, nums2=nums2, n=n))
+
 # nums1 = [1,2,3,0,0,0]
 # m = 3
 # nums2 = [2,5,6]
 # n = 3
-#
-# def merge(nums1: List[int],nums2: List[int]) -> None:
-#     nums1 = nums1 +nums2
-#     while 0 in nums1:
-#         nums1.remove(0)
-#
-#     return nums1.sort()
-#
-#
-#
-#
-# print(merge(nums1=nums1, nums2=nums2))
 
 
+# def merge( nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+#         if n == 0 :return 
+#         len1 = len(nums1)
+#         end_idx = len1-1 
+#         while n > 0 and m > 0:
+#             if nums2[n-1] >= nums1[m-1]:
+#                 nums1[end_idx] = nums2[n-1]
+#                 n -= 1
+#             else:
+#                 nums1[end_idx] = nums1[m - 1]
+#                 m -= 1
+#             end_idx -= 1
+#         while n > 0:
+#             nums1[end_idx] = nums2[n-1]
+#             n-= 1
+#             end_idx -= 1
+
+#         return nums1
+
+
+# print(merge(nums1=nums1, m=m, nums2=nums2, n=n))
