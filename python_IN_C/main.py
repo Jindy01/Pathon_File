@@ -502,6 +502,4 @@ n = 3
 #             end_idx -= 1
 
 #         return nums1
-getattr()
-
 # print(merge(nums1=nums1, m=m, nums2=nums2, n=n))
