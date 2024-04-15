@@ -503,4 +503,7 @@ n = 3
 
 #         return nums1
 # print(merge(nums1=nums1, m=m, nums2=nums2, n=n))
-yyy
+
+for i in range(1, 10):
+    print(i)
+
