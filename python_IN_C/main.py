@@ -2,7 +2,6 @@ from ast import List
 from typing import List
 import random
 import re
-import numpy as np
 
 
 
@@ -462,10 +461,10 @@ import numpy as np
 
 # print(removeElement(nums,val))
 
-nums1 = [1,2,3,0,0,0]
-m = 3
-nums2 = [2,5,6]
-n = 3
+# nums1 = [1,2,3,0,0,0]
+# m = 3
+# nums2 = [2,5,6]
+# n = 3
 
 # def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
 #     if n == 0: return
@@ -504,6 +503,65 @@ n = 3
 #         return nums1
 # print(merge(nums1=nums1, m=m, nums2=nums2, n=n))
 
-for i in range(1, 10):
-    print(i)
 
+# zeros_list = [0,0,1]
+# def moveZeroes(nums: List) -> None:
+#     count_zeroes = 0
+#     while 0 in nums:
+#         if 0 in nums:
+#             count_zeroes += 1
+#             nums.remove(0)
+#         elif 0 not in nums:
+#             continue
+
+    # for i, el in enumerate(nums):
+        
+    #     if el == 0:
+    #         count_zeroes += 1
+    #         nums.remove(el)
+            
+    #     elif i > 0:
+    #         continue
+
+#     while count_zeroes > 0:
+#         nums.append(0)
+#         count_zeroes -= 1
+
+#     return nums
+
+# print(moveZeroes(zeros_list))
+
+
+# def moveZeroes_req(nums: List, count_zeroes: int = 0, niplle = True) -> None:
+#     if 0 in nums and nipple == True:
+#         nums.remove(0)
+#         count_zeroes += 1 
+        
+#         nums, count_zeroes = moveZeroes_req(nums=nums, count_zeroes=count_zeroes, niplle=niplle )
+    
+#     nipple = True
+#     if 0 not in nums:
+#         nipple == False
+    
+#     if count_zeroes > 0:
+#         nums.append(0)
+#         count_zeroes -= 1
+#         nums, count_zeroes = moveZeroes_req(nums=nums, count_zeroes=count_zeroes, niplle=niplle)
+
+
+#     if count_zeroes == 0:
+#         return nums, count_zeroes
+
+# print(moveZeroes_req(zeros_list))
+
+nums = [0,1,0,3,12]
+
+def moveZeroes(nums: List) -> None:
+    i = 0
+    for j in range(len(nums)):
+        if nums[j] != 0:
+            nums[i], nums[j] = nums[j], nums[i]
+            i+=1
+    return nums
+
+moveZeroes(nums=nums)
