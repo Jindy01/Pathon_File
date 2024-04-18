@@ -557,14 +557,32 @@ import re
 
 # print(moveZeroes_req(zeros_list))
 
-nums = [0,1,0,3,12]
+# nums = [0,1,0,3,12]
 
-def moveZeroes(nums: List) -> None:
-    i = 0
-    for j in range(len(nums)):
-        if nums[j] != 0:
-            nums[i], nums[j] = nums[j], nums[i]
-            i+=1
-    return nums
+# def moveZeroes(nums: List) -> None:
+#     i = 0
+#     for j in range(len(nums)):
+#         if nums[j] != 0:
+#             nums[i], nums[j] = nums[j], nums[i]
+#             i+=1
+#     return nums
 
-moveZeroes(nums=nums)
+# moveZeroes(nums=nums)
+
+
+
+
+def new_obj():
+    name = input('Name')
+    ears_old = input('ears_old')
+    city = input('city')
+
+    data = {
+        'name': name,
+        'ears_old': ears_old,
+        'city': city,
+    }
+
+    return data
+
+print(new_obj())
