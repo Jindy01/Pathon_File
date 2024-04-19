@@ -569,20 +569,3 @@ import re
 
 # moveZeroes(nums=nums)
 
-
-
-
-def new_obj():
-    name = input('Name')
-    ears_old = input('ears_old')
-    city = input('city')
-
-    data = {
-        'name': name,
-        'ears_old': ears_old,
-        'city': city,
-    }
-
-    return data
-
-print(new_obj())
