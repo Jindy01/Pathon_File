@@ -569,3 +569,54 @@ import re
 
 # moveZeroes(nums=nums)
 
+
+
+
+# def new_obj():
+#     name = input('Name')
+#     ears_old = input('ears_old')
+#     city = input('city')
+
+#     data = {
+#         'name': name,
+#         'ears_old': ears_old,
+#         'city': city,
+#     }
+
+#     return data
+
+# print(new_obj())
+
+
+# matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,3]]
+# target = 3
+
+# def searchMatrix(matrix , target) -> bool:
+#     for row in matrix:
+#         if target not in row:
+#             continue
+#         elif target in row:
+#             return True
+#         else: 
+#             return False
+
+# print(searchMatrix(matrix=matrix, target=3))
+
+# numbers = [5, 2, 9, 1, 6, 11, 4, 14, 3, 0]
+
+# def sort_numbers(numbers: list) -> list:
+#     for i in range(1, len(numbers)):
+#         item = numbers[i]
+#         i2 = i - 1
+#         while i2 >= 0 and numbers[i2] > item:
+#             numbers[i2 + 1] = numbers[i2]
+#             i2 -= 1
+#         numbers[i2 + 1] = item
+    
+    
+# sort_numbers(numbers=numbers)
+
+# print(numbers)
+
+
+
