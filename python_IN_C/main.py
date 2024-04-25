@@ -638,27 +638,12 @@ def convert_v2(number) -> str:
         return str(alphabet_dict[number])
     
     if number > 26:
-        cost_z = math.floor(number / 26)
-        second_letter = number % 26
+        cost_z = math.floor((number / 26) / 26)
+        second_letter = number % 26 
         second_letter = str(second_letter)
-        result = (cost_z * 'z') + second_letter
+        result = (cost_z + 'z') + second_letter
         # first_letter = math.floor(number / 26)
         # return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
         return str(result)
     
 print(convert_v2(702))
-
-
-print('sceep day')
-print('sceep day')
-
-
-
-
-
-
-        
-
-
-        
-
