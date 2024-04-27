@@ -618,35 +618,74 @@ import math
 
 # print(numbers)
 
-number = 701
-print(600 % 26)
 
-def convert(number) -> str:
-    alphabet_dict = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 6: 'F', 7: 'G', 8: 'H', 9: 'I', 10: 'J', 11: 'K', 12: 'L', 13: 'M', 14: 'N', 15: 'O', 16: 'P', 17: 'Q', 18: 'R', 19: 'S', 20: 'T', 21: 'U', 22: 'V', 23: 'W', 24: 'X', 25: 'Y', 26: 'Z'}  
-    if number <= 26:
-        return str(alphabet_dict[number])
+# number = 701
+# print(600 % 26)
+
+# def convert(number) -> str:
+#     alphabet_dict = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 6: 'F', 7: 'G', 8: 'H', 9: 'I', 10: 'J', 11: 'K', 12: 'L', 13: 'M', 14: 'N', 15: 'O', 16: 'P', 17: 'Q', 18: 'R', 19: 'S', 20: 'T', 21: 'U', 22: 'V', 23: 'W', 24: 'X', 25: 'Y', 26: 'Z'}  
+#     if number <= 26:
+#         return str(alphabet_dict[number])
     
-    if number > 26:
-        second_letter = number % 26
-        first_letter = math.floor(number / 26)
-        return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
+#     if number > 26:
+#         second_letter = number % 26
+#         first_letter = math.floor(number / 26)
+#         return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
+
+# print(convert(702))
 
 
-def convert_v2(number) -> str:
-    alphabet_dict = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 6: 'F', 7: 'G', 8: 'H', 9: 'I', 10: 'J', 11: 'K', 12: 'L', 13: 'M', 14: 'N', 15: 'O', 16: 'P', 17: 'Q', 18: 'R', 19: 'S', 20: 'T', 21: 'U', 22: 'V', 23: 'W', 24: 'X', 25: 'Y', 26: 'Z'}  
-    if number <= 26:
-        return str(alphabet_dict[number])
+# def convert_v2(number) -> str:
+#     alphabet_dict = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 6: 'F', 7: 'G', 8: 'H', 9: 'I', 10: 'J', 11: 'K', 12: 'L', 13: 'M', 14: 'N', 15: 'O', 16: 'P', 17: 'Q', 18: 'R', 19: 'S', 20: 'T', 21: 'U', 22: 'V', 23: 'W', 24: 'X', 25: 'Y', 26: 'Z'}  
+#     if number <= 26:
+#         return str(alphabet_dict[number])
     
-    if number > 26:
-        cost_z = math.floor((number / 26) / 26)
-        second_letter = number % 26 
-        second_letter = str(second_letter)
-        result = (cost_z + 'z') + second_letter
-        # first_letter = math.floor(number / 26)
-        # return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
-        return str(result)
+#     if number > 26:
+#         # cost_z = math.floor(number / 26)
+#         second_letter = number % 26 
+#         second_letter = str(second_letter)
+#         # result = (cost_z) + second_letter
+#         first_letter = math.floor(number / 26)
+#         return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
+#         # return str(result)
     
-print(convert_v2(702))
+# print(convert_v2(702))
+ 
+
+# number = 701
+# print(600 % 26)
+
+# def convert(number) -> str:
+#     alphabet_dict = {1: 'A', 2: 'B', 3: 'C', 4: 'D', 5: 'E', 6: 'F', 7: 'G', 8: 'H', 9: 'I', 10: 'J', 11: 'K', 12: 'L', 13: 'M', 14: 'N', 15: 'O', 16: 'P', 17: 'Q', 18: 'R', 19: 'S', 20: 'T', 21: 'U', 22: 'V', 23: 'W', 24: 'X', 25: 'Y', 26: 'Z'}  
+    
+#     i = 0 
+#     while i > number:
+#         list_of_letters = []
+#         first_letter = 0 
+#         second_letter = 0
 
 
-print('cleap')
+    
+#     if number <= 26:
+#         return str(alphabet_dict[number])
+    
+#     if number > 26:
+#         second_letter = number % 26
+#         first_letter = math.floor(number / 26)
+#         return str(alphabet_dict[first_letter] + alphabet_dict[second_letter])
+
+# print(convert(702))
+
+
+# def convert_To_Title_of_LC(columnNumber: int):
+#     result = []
+#     while columnNumber:
+#         columnNumber, remainder = divmod(columnNumber - 1, 26)
+#         result.append(chr(65 + remainder))
+#     return ''.join(reversed(result))
+
+
+# print(convert_To_Title_of_LC(1123)
+
+
+
