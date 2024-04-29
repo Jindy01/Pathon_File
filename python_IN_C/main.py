@@ -687,10 +687,25 @@ import math
 
 # print(convert_To_Title_of_LC(1123)
 
-print('wa')
+
+def longest_subsrting(s):
+    answer = 0 
+
+    for left in range(len(s)):
+        for right in range(left, len(s)):
+            is_acceptable = True
+            char_set = set()
+            
+        for i in range(left, right + 1):
+            if s[i] in char_set:
+                is_acceptable = False
+                break
+            char_set.add(s[i])
+        if is_acceptable and answer < right - left + 1:
+            answer = right - left + 1
+    
+    return answer
 
 
-
-
-
-
+print(longest_subsrting('abcbadaqwert'))
+# Разобрать код до конца 

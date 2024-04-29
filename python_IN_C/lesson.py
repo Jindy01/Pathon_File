@@ -200,10 +200,3 @@ from collections import deque
     
 # print(factorial(5))
 
-
-
-
-
-
-
-
