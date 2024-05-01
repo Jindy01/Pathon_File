@@ -1,5 +1,3 @@
-
-
 # with open('new_FL', 'w') as f:
 #     f.write('Hello ! New File')
 
@@ -23,5 +21,6 @@ with open('employees.txt', 'r') as f:
         age = data[2]
         print(line)
         print(f"First Name: {first_name}, Last Name: {last_name}, Age: {age}")
+
 
 
