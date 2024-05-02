@@ -59,20 +59,29 @@ cursor.execute('INSERT OR IGNORE INTO Users (username, email, age) VALUES (?, ?,
 # Обновляет данные пользователя " newuser "
 # cursor.execute('UPDATE Users SET age = ? WHERE username = ?', (29, 'newuser'))
 # Удаляет пользователя по имени " newuser "
-cursor.execute('DELETE FROM Users WHERE username = ?', ('1', ))
+# cursor.execute('DELETE FROM Users WHERE username = ?', ('1', ))
 # Извлекает данные из таблицы " Users "
-cursor.execute('SELECT * FROM Users')
-users = cursor.fetchall()
-[print(user) for user in users]
+# cursor.execute('SELECT * FROM Users')
+# users = cursor.fetchall()
+# [print(user) for user in users]
 # Выбирает имина и возвраст пользователей старше 25 лет
-cursor.execute('SELECT username, age FROM Users WHERE age > ?', (25,))
-result = cursor.fetchall()
-[print(row) for row in result]
+# cursor.execute('SELECT username, age FROM Users WHERE age > ?', (25,))
+# result = cursor.fetchall()
+# [print(row) for row in result]
 # Получаем средний вощвраст пользователей для каждого возраста
-cursor.execute('SELECT age, AVG(age) FROM Users GROUP BY age')
-result_for_age = cursor.fetchall()
-[print(row) for row in result_for_age]
+# cursor.execute('SELECT age, AVG(age) FROM Users GROUP BY age')
+# result_for_age = cursor.fetchall()
+# [print(row) for row in result_for_age]
 # Фильтруем группы по среднему возрасту больше 30 
-cursor.execute('SELECT age, AVG(age) FROM USERS')
+# cursor.execute('SELECT age, AVG(age) FROM Users GROUP BY age HAVING AVG(age) > ?', (30, ))
+# filtered_results = cursor.fetchall()
+# [print(row) for row in filtered_results]
+# Выбираем и сортируем пользователей по возрасту и убыванию
+# cursor.execute('SELECT username, age FROM Users ORDER BY age DESC')
+# result_min = cursor.fetchall()
+# [print(row) for row in result_min]
+
+
+
 connection.commit()
 connection.close()
