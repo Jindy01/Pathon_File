@@ -82,6 +82,5 @@ cursor.execute('INSERT OR IGNORE INTO Users (username, email, age) VALUES (?, ?,
 # [print(row) for row in result_min]
 
 
-
-connection.commit()
-connection.close()
+# connection.commit()
+# connection.close()
