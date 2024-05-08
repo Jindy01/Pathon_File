@@ -86,4 +86,4 @@ cursor.execute('INSERT OR IGNORE INTO Users (username, email, age) VALUES (?, ?,
 # connection.close()
 
 
-print('wcik')
+for 
