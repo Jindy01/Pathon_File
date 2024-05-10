@@ -21,6 +21,3 @@
 #         age = data[2]
 #         print(line)
 #         print(f"First Name: {first_name}, Last Name: {last_name}, Age: {age}")
-
-
-

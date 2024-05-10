@@ -84,6 +84,3 @@ cursor.execute('INSERT OR IGNORE INTO Users (username, email, age) VALUES (?, ?,
 
 # connection.commit()
 # connection.close()
-
-
-for 
