@@ -54,6 +54,7 @@ if is_create_new_user == 1:
 
 # Создаёт индекс для столбца " email "
 cursor.execute('CREATE INDEX IF NOT EXISTS idx_email ON Users (email)')
+
 # Создаёт нового пользователя а так же блокирует создание дубликата 
 cursor.execute('INSERT OR IGNORE INTO Users (username, email, age) VALUES (?, ?, ?)', (username, create_new_email, create_new_age))
 # Обновляет данные пользователя " newuser "
